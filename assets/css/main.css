@@ -94,6 +94,28 @@ body {
   letter-spacing: -0.2px;
 }
 
+.coaching .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.xb-coaching {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.xb-item--inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.xb-item--holder {
+  flex-grow: 1;
+}
 img {
   max-width: 100%;
   height: auto;
