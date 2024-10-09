@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = htmlspecialchars(trim($_POST['message']));
 
   // Set email details
-  $to = "info@wortextechnologies.com"; // The email address where the form will be sent
+  $to = "peirissuggreewa@gmail.com"; // The email address where the form will be sent
   $subject = "New Contact Form Submission from $name";
 
   // Create email body
