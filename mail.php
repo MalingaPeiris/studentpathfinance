@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    $service = htmlspecialchars($_POST['service']);
-    $phone = htmlspecialchars($_POST['phone']);
-    $message = htmlspecialchars($_POST['message']);
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $service = $_POST['service'];
+    $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
     $to = "peirissuggreewa@gmail.com";  // Replace with your email address
     $subject = "New Contact Form Submission";
