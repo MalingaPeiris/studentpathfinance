@@ -11,6 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $to = "peirissuggreewa@gmail.com"; // The email address where the form will be sent
   $subject = "New Contact Form Submission from $name";
 
+  
+
   // Create email body
   $body = "
     <html>
@@ -34,8 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
   // Additional headers
-  $headers .= "From: $name <$email>" . "\r\n";
+  $headers .= "From: deadsnake404@gmail.com";
   $headers .= "Reply-To: $email" . "\r\n";
+
+  mail($to, $subject, $body, $headers);
 
   // Send email
   if (mail($to, $subject, $body, $headers)) {
