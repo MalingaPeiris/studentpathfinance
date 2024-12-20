@@ -10849,4 +10849,34 @@ a.ui-button:active,
   }
 }
 
+.maintenance-banner {
+  width: 100%;
+  background: #ff4c4c;
+  /* Red background */
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.maintenance-banner .content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.maintenance-banner .icon {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.maintenance-banner h1 {
+  font-size: 36px;
+  margin: 0 0 10px;
+}
+
+.maintenance-banner p {
+  font-size: 18px;
+  margin: 0;
+  line-height: 1.6;
+}
 /*# sourceMappingURL=main.css.map */
