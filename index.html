@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Under Maintenance</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, #ff4c4c, #d43c3c);
+        color: #fff;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Container styles */
+    .maintenance-container {
+        text-align: center;
+        max-width: 600px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    /* Icon styles */
+    .maintenance-content .icon {
+        font-size: 80px;
+        margin-bottom: 20px;
+    }
+    
+    /* Header styles */
+    .maintenance-content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #ffd700;
+    }
+    
+    /* Paragraph styles */
+    .maintenance-content p {
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+    
+    /* Progress bar container */
+    .progress-bar {
+        width: 100%;
+        height: 10px;
+        background: #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Progress bar animation */
+    .progress {
+        width: 70%; /* Set progress width here */
+        height: 100%;
+        background: #ffd700;
+        animation: progressAnim 2s infinite ease-in-out;
+    }
+    
+    /* Progress animation */
+    @keyframes progressAnim {
+        0% { width: 0; }
+        100% { width: 100%; }
+    }
+    
+</style>
+
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-content">
+            <div class="icon">🚧</div>
+            <h1>Website Under Maintenance</h1>
+            <p>We are currently improving our website for a better user experience. Please check back soon!</p>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
